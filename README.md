@@ -4,11 +4,20 @@
 > **Foxlab Makerspace** in association with **GTech - Group of Technology Companies** in Kerala is launching our prestigious program  **“Kerala IoT Challenge 2021”**,  with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. **Kerala IoT Challenge** is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
 
 ### About Me
-> Hello Folks! I'm [**MOhammed Shaneeb**]. i am studying in +2 in PKMHHS Edarikkode (Computer Science),I am very intrested to Learn IOT, Thanks Foxlab for giving wonderfull opertunuity
+> Hello Folks! I'm [**Mohammed Shaneeb**]. i am studying in +2 in PKMHHS Edarikkode (Computer Science),I am very intrested to Learn IOT, Thanks Foxlab for giving wonderfull opertunuity
 
 ## IoT Challenge Experiments
 
 ### Experiment 1 - Hello World LED Blinking
+
+#### Things you need
+* Arduino Uno Board
+* USB Cable
+* LED (Any Color) x 1 Nos
+* 220 OHM Resistor X 1 Nos
+* Breadboard
+* Jumper Wires (Male to Male ) X 2 Nos
+
 
 ![Hello World LED Blinking](https://user-images.githubusercontent.com/44474792/132120834-bddf79e5-99d3-4d99-a355-b5776fd7c1a0.jpg)
 #### Code
