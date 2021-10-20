@@ -37,6 +37,17 @@ void loop()
 
 ### Experiment 2 - Traffic Light
 
+#### Hardware required
+
+* Arduino board *1
+* USB cable *1
+* Red M5 LED*1
+* Yellow M5 LED*1
+* Green M5 LED*1
+* 220Ω resistor *3
+* Breadboard*1
+* Breadboard jumper wires* several
+
 ![Traffic Light](https://user-images.githubusercontent.com/44474792/132121020-4329f96c-e525-4472-aad3-e703826993d2.jpg)
 #### Code
 ```ino
@@ -70,6 +81,13 @@ void loop()
 
 ### Experiment 3 - LED Chasing Effect
 
+#### Hardware required
+* Led *6
+* Arduino board *1
+* 220Ω resistor *6
+* Breadboard *1
+* USB cable*1
+* Breadboard wire *13
 ![image](https://user-images.githubusercontent.com/44474792/132120873-538e171f-9ffd-4356-aa7f-45576711db21.jpg)
 #### Code
 ```ino
@@ -97,6 +115,16 @@ void loop()
 
 ### Experiment 4 - Button Controlled LED
 
+#### Components Required
+* Arduino Uno
+* Button switch*1
+* Red M5 LED*1
+* 220ΩResistor*1
+* 10KΩ Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*6
+* USB cable*1
+
 ![image](https://user-images.githubusercontent.com/44474792/132127544-f42e9f96-9f2c-4898-93ce-e479ee40d3d3.png)
 #### Code
 ```ino
@@ -121,6 +149,13 @@ void loop()
 ```
 
 ### Experiment 5 - Buzzer
+
+#### Components Required
+* Arduino Uno
+* Buzzer*1
+* Breadboard*1
+* Breadboard Jumper Wire*2
+* USB cable*1
 
 ![image](https://user-images.githubusercontent.com/44474792/132120819-7dca413d-2dbe-41b3-9929-c44915715aa0.jpg)
 #### Code
