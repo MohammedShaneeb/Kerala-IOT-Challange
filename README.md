@@ -100,7 +100,7 @@ void loop()
 ![image](https://user-images.githubusercontent.com/44474792/132127544-f42e9f96-9f2c-4898-93ce-e479ee40d3d3.png)
 #### Code
 ```ino
-int x;
+int val;
 void setup()
 {
   pinMode(11, OUTPUT);
@@ -109,7 +109,7 @@ void setup()
 void loop()
 {
   val=digitalRead(7);
-  if(x == LOW)
+  if(val == LOW)
   {
     digitalWrite(11, LOW);
   }
