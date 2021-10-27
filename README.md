@@ -19,7 +19,7 @@
 * Jumper Wires (Male to Male ) X 2 Nos
 
 
-![Hello World LED Blinking](https://github.com/MohammedShaneeb/Kerala-Iot-Challange/blob/c9711cbbfb125b41f6558ae29bb49aab2f5c3584/Screenshot%20from%202021-10-24%2021-12-11.png)
+![Hello World LED Blinking](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/Screenshot%20from%202021-10-24%2021-12-11.png)
 #### Code
 ```ino
 void setup() 
