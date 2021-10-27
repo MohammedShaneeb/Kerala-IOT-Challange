@@ -88,7 +88,7 @@ void loop()
 * Breadboard *1
 * USB cable*1
 * Breadboard wire *13
-![image](https://user-images.githubusercontent.com/44474792/132120873-538e171f-9ffd-4356-aa7f-45576711db21.jpg)
+![image](https://github.com/MohammedShaneeb/Kerala-Iot-Challange/blob/c9711cbbfb125b41f6558ae29bb49aab2f5c3584/Screenshot%20from%202021-10-24%2021-12-11.png)
 #### Code
 ```ino
 void setup()
