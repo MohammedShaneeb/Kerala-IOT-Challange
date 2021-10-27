@@ -22,16 +22,21 @@
 ![Hello World LED Blinking](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/Screenshot%20from%202021-10-24%2021-12-11.png)
 #### Code
 ```ino
-void setup() 
-{ 
-  pinMode(8, OUTPUT);
-} 
-void loop() 
-{
-  digitalWrite(8, HIGH);
+int led = 11;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led,OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(led,HIGH);
   delay(1000);
-  digitalWrite(8, LOW);
+  digitalWrite(led,LOW);
   delay(1000);
+
 }
 ```
 
