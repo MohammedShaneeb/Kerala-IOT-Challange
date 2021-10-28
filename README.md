@@ -98,7 +98,6 @@ digitalWrite(redled, LOW);// turn off red LED
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_3.jpeg)
 #### Code
 ```ino
-
 int BASE = 2;
 int NUM = 7;
 int dly = 200;
@@ -126,6 +125,7 @@ void loop() {
   }
 
 }
+
 ```
 
 ### Experiment 4 - Button Controlled LED
