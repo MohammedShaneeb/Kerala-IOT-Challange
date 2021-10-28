@@ -95,28 +95,35 @@ digitalWrite(redled, LOW);// turn off red LED
 * Breadboard *1
 * USB cable*1
 * Breadboard wire *13
-![image](https://github.com/MohammedShaneeb/Kerala-Iot-Challange/blob/c9711cbbfb125b41f6558ae29bb49aab2f5c3584/Screenshot%20from%202021-10-24%2021-12-11.png)
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_3.jpeg)
 #### Code
 ```ino
-void setup()
-{
-   for (int i = 7; i < 13; i ++) 
-   {
-     pinMode(i, OUTPUT);
-   }
+ int BASE = 2;
+ int NUM = 7;
+ int dly = 200;
+ 
+ void setup() {
+  // put your setup code here, to run once:
+  for(int i= BASE;i<=NUM;i++){
+    pinMode(i,OUTPUT);
+    
+  }
+
 }
-void loop()
-{
-   for (int i = 7; i < 13; i ++) 
-   {
-     digitalWrite(i, LOW);
-     delay(200);
-   }
-   for (int i = 7; i < 13; i ++) 
-   {
-     digitalWrite(i, HIGH);
-     delay(200);
-   }  
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for(int i=BASE;i<=NUM;i++){
+    
+    digitalWrite(i,HIGH);
+    delay(dly);
+  }
+
+  for(int i=NUM;i>=BASE;i--){
+    digitalWrite(i,LOW);
+    delay(dly);
+  }
+
 }
 ```
 
