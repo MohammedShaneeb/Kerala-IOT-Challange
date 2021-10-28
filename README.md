@@ -139,26 +139,28 @@ void loop() {
 * Breadboard Jumper Wire*6
 * USB cable*1
 
-![image](https://user-images.githubusercontent.com/44474792/132127544-f42e9f96-9f2c-4898-93ce-e479ee40d3d3.png)
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_4.jpeg)
 #### Code
 ```ino
-int val;
-void setup()
-{
-  pinMode(11, OUTPUT);
-  pinMode(7, INPUT);
+int led = 7;
+int btn = 4;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led,OUTPUT);
+  pinMode(btn,INPUT);
+
 }
-void loop()
-{
-  val=digitalRead(7);
-  if(val == LOW)
-  {
-    digitalWrite(11, LOW);
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int val = digitalRead(btn);
+  if (val == HIGH){
+    digitalWrite(led,HIGH);
+  }else{
+    digitalWrite(led,LOW);
   }
-  else
-  {
-    digitalWrite(11, HIGH);
-  }
+
 }
 ```
 
