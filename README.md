@@ -175,19 +175,21 @@ void loop() {
 * Breadboard Jumper Wire*2
 * USB cable*1
 
-![image](https://user-images.githubusercontent.com/44474792/132120819-7dca413d-2dbe-41b3-9929-c44915715aa0.jpg)
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_5.jpeg)
 #### Code
 ```ino
-void setup() 
-{ 
-  pinMode(8, OUTPUT);
-} 
-void loop() 
+
+void setup()
 {
-  digitalWrite(8, HIGH);
-  delay(1000);
-  digitalWrite(8, LOW);
-  delay(1000);
+  pinMode(2, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(2, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  delay(500); // Wait for 1000 millisecond(s)
 }
 ```
 
