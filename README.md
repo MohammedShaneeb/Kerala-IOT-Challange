@@ -53,7 +53,7 @@ void loop() {
 * Breadboard*1
 * Breadboard jumper wires* several
 
-![Traffic Light](https://user-images.githubusercontent.com/44474792/132121020-4329f96c-e525-4472-aad3-e703826993d2.jpg)
+![Traffic Light](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/IMG_20211027_233237.jpg)
 #### Code
 ```ino
 
