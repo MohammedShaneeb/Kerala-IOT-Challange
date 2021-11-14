@@ -239,5 +239,48 @@ for(val=0; val<255; val++)
  Serial.println(val, DEC);
 }
 ```
+### Experiment 7 - LDR 
 
+#### Components Required
+* Arduino Uno Board
+* Photo Resistor*1
+* Red M5 LED*1
+* 10KΩ Resistor*1
+* 220Ω Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*5
+* USB cable*1
+
+
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_7.jpeg)
+#### Code
+```ino
+int led = 4;
+int ldr = 0;
+int ldr_value;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led,OUTPUT);
+  pinMode(ldr,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  ldr_value = analogRead(ldr);
+  Serial.println(ldr_value);
+
+  if(ldr_value < 150){
+    digitalWrite(led,HIGH);
+    
+  }else{
+    digitalWrite(led,LOW);
+  }
+
+}
+
+}
+```
 
