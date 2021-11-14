@@ -284,3 +284,37 @@ void loop() {
 }
 ```
 
+### Experiment 11 - Potentiometer analog Value Reading 
+
+#### Components Required
+* Arduino Uno Board
+* Potentiometer*1
+* LED*1
+* 220Ω Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*5
+* USB cable*1
+
+### ADDED
+** i added a LED on output of potentiometer, so i can adjut LED's brightness
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_exp_11.jpeg)
+#### Code
+```ino
+
+int vr = 0;
+int val;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(vr,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  val = analogRead(vr);
+  Serial.println(val);
+
+}
+```
