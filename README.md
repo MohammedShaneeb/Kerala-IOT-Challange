@@ -617,7 +617,9 @@ void loop() {
 * USB cable*1
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_AS_2.jpeg)
-#### Video <iframe width="560" height="315" src="https://www.youtube.com/embed/6W5AEqyr68A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#### Video 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6W5AEqyr68A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Code
 ```ino
 int a=10;// set digital pin 7 for segment a
