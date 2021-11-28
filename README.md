@@ -284,6 +284,47 @@ void loop() {
 }
 ```
 
+### Experiment 8 - Flame Sensor 
+
+#### Components Required
+* Arduino Uno Board
+* IR Reciever
+* LED*1
+* 10KΩ Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*4
+* USB cable*1
+
+#### Fun Fact 
+* when i fired to my sensor my jumber wires are fired and it is damaged
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_8.jpeg)
+#### Code
+```ino
+
+int flame=0;// select analog pin 0 for the sensor
+int LED=9;// select digital pin 9 for the LED
+int val=0;
+ void setup() 
+{
+ pinMode(LED,OUTPUT); 
+ pinMode(flame,INPUT); 
+ Serial.begin(9600);
+void loop() 
+{ 
+  val=analogRead(flame);// read the analog value of the sensor 
+  Serial.println(val);// output and display the analog value
+  if(val>=600)// when the analog value is larger than 600, the led will glow
+  {  
+   digitalWrite(LED,HIGH); 
+   }else 
+   {  
+     digitalWrite(LED,LOW); 
+    }
+   delay(500); 
+}
+```
+
 ### Experiment 11 - Potentiometer analog Value Reading 
 
 #### Components Required
