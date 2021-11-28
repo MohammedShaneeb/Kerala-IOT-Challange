@@ -324,6 +324,39 @@ void loop()
    delay(500); 
 }
 ```
+### Experiment 9 -  LM35 Temperature sensor 
+
+#### Components Required
+* Arduino Uno Board
+* LM35 Sensor
+* Breadboard*1
+* Breadboard Jumper Wire*3
+* USB cable*1
+
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_9.jpg)
+#### Code
+```ino
+
+int sensorPin = 0; // initialize analog pin 0 for LM35 temperature sensor
+void setup()
+{
+Serial.begin(9600);// set baud rate at”9600”
+}
+void loop()
+{
+int val;// define variable
+int dat;// define variable
+val=analogRead(sensorPin);// read the analog value of the sensor and assign it to val
+dat=(125*val)>>8;// temperature calculation formula
+Serial.print("Tep");// output and display characters beginning with Tep
+Serial.print(dat);// output and display value of dat
+Serial.println("C");// display “C” characters
+delay(500);// wait for 0.5 second
+}
+
+```
+
 
 ### Experiment 11 - Potentiometer analog Value Reading 
 
@@ -584,6 +617,7 @@ void loop() {
 * USB cable*1
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_AS_2.jpeg)
+#### Video <iframe width="560" height="315" src="https://www.youtube.com/embed/6W5AEqyr68A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #### Code
 ```ino
 int a=10;// set digital pin 7 for segment a
