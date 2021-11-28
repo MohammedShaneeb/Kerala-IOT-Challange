@@ -526,3 +526,207 @@ delay(1000); // wait for 1s
 }}
 
 ```
+### Assignment 1 - Automatic Night Lamp 
+
+#### Components Required
+* Arduino Uno Board
+* Photo Resistor*1
+* Red M5 LED*1
+* 10KΩ Resistor*1
+* 220Ω Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*5
+* USB cable*1
+
+LDR
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_7.jpeg)
+#### Code
+```ino
+int led = 4;
+int ldr = 0;
+int ldr_value;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led,OUTPUT);
+  pinMode(ldr,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  ldr_value = analogRead(ldr);
+  Serial.println(ldr_value);
+
+  if(ldr_value < 150){
+    digitalWrite(led,HIGH);
+    
+  }else{
+    digitalWrite(led,LOW);
+  }
+
+}
+
+}
+```
+
+
+### Assignment 2
+
+#### Components Required
+* Arduino Uno Board
+* 7 Segment Display
+* LED*1
+* 220Ω Resistor*8
+* Breadboard*1
+* Breadboard Jumper Wire*12
+* USB cable*1
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_AS_2.jpeg)
+#### Code
+```ino
+int a=10;// set digital pin 7 for segment a
+int b=11;// set digital pin 6 for segment b
+int c=5;// set digital pin 5 for segment c
+int d=6;// set digital pin 10 for segment d
+int e=7;// set digital pin 11 for segment e
+int f=8;// set digital pin 8 for segment f
+int g=9;// set digital pin 9 for segment g
+int dp=4;// set digital pin 4 for segment dp
+
+int btnPin = 3;
+int btnState;
+long ran;
+
+void digital_0(void) // display number 0
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
+}
+void digital_1(void) // display number 1
+{
+unsigned char j;
+digitalWrite(a,LOW);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,LOW);
+digitalWrite(e,LOW);
+digitalWrite(f,LOW);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
+}
+void digital_2(void) // display number 2
+{
+unsigned char j;
+digitalWrite(b,HIGH);
+digitalWrite(a,HIGH);
+digitalWrite(c,LOW);
+digitalWrite(d,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(e,HIGH);
+digitalWrite(f,LOW);
+}
+void digital_3(void) // display number 3
+{digitalWrite(g,HIGH);
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(f,LOW);
+digitalWrite(e,LOW);
+}
+void digital_4(void) // display number 4
+{digitalWrite(c,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(a,LOW);
+digitalWrite(e,LOW);
+digitalWrite(d,LOW);
+}
+void digital_5(void) // display number 5
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b, LOW);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e, LOW);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_6(void) // display number 6
+{
+unsigned char j;
+for(j=6;j<=11;j++)
+digitalWrite(j,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(b,LOW);
+}
+
+void setup()
+{
+int i;// set variable
+for(i=4;i<=11;i++)
+pinMode(i,OUTPUT);// set pin 4-11as “output”
+pinMode(3,INPUT);
+randomSeed(analogRead(0));
+Serial.begin(9600);
+}
+void loop()
+{
+  btnState = digitalRead(btnPin);
+  if (btnState == HIGH){
+    ran = random(1,7);
+    Serial.println(ran);
+    if (ran == 1){
+      digital_1();
+      delay(2000);
+    }
+    if (ran == 2){
+      digital_2();
+      delay(2000);
+    }
+    if (ran == 3){
+      digital_3();
+      delay(2000);
+    }
+    if (ran == 4){
+      digital_4();
+      delay(2000);
+    }
+    if (ran == 5){
+      digital_5();
+      delay(2000);
+    }
+    if (ran == 6){
+      digital_6();
+      delay(2000);
+    }
+  }
+  else{
+    digitalWrite(a,LOW);
+    digitalWrite(b,LOW);
+    digitalWrite(c,LOW);
+    digitalWrite(d,LOW);
+    digitalWrite(e,LOW);
+    digitalWrite(f,LOW);
+    digitalWrite(g,LOW);
+    digitalWrite(dp,LOW);
+    }
+}
+
+```
