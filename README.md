@@ -264,6 +264,11 @@ for(val=0; val<255; val++)
 
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_7.jpeg)
+
+#### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/juIwRZT2WAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Code
 ```ino
 int led = 4;
