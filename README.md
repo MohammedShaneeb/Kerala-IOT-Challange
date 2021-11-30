@@ -381,7 +381,9 @@ delay(500);// wait for 0.5 second
 * Breadboard*1
 * Breadboard Jumper Wire*8
 * USB cable*1
-
+* 
+#### ADDED
+   I am used one key to on and off a LED so i used only 4 keys to control 4 LED
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_10.jpeg)
 #### Code
