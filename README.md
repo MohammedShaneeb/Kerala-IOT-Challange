@@ -54,6 +54,11 @@ void loop() {
 * Breadboard jumper wires* several
 
 ![Traffic Light](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_2.jpeg)
+
+#### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DEKTB6F7wqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Code
 ```ino
 
@@ -97,6 +102,11 @@ digitalWrite(redled, LOW);// turn off red LED
 * Breadboard wire *13
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_3.jpeg)
+
+#### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YvPxL-m6VPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Code
 ```ino
 int BASE = 2;
@@ -368,7 +378,7 @@ delay(500);// wait for 0.5 second
 * USB cable*1
 
 
-![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_9.jpg)
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_10.jpeg)
 #### Code
 ```ino
 #include <IRremote.h>
@@ -673,6 +683,11 @@ delay(1000); // wait for 1s
 LDR
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_7.jpeg)
+
+#### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/juIwRZT2WAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Code
 ```ino
 int led = 4;
@@ -704,7 +719,7 @@ void loop() {
 ```
 
 
-### Assignment 2
+### Assignment 2 Digital Dice Using 7 Segment Display
 
 #### Components Required
 * Arduino Uno Board
@@ -716,6 +731,10 @@ void loop() {
 * USB cable*1
 
 ![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_AS_2.jpeg)
+
+#### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KeeUy6YmXmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 #### Code
