@@ -356,6 +356,102 @@ delay(500);// wait for 0.5 second
 }
 
 ```
+### Experiment 10 -  IR Remote Control Using TSOP 
+
+#### Components Required
+* Arduino Uno Board
+* TSOP Sensor
+* LED*4
+* resistor(220 ohm)*4
+* Breadboard*1
+* Breadboard Jumper Wire*8
+* USB cable*1
+
+
+![image](https://raw.githubusercontent.com/MohammedShaneeb/Kerala-Iot-Challange/main/L1_EXP_9.jpg)
+#### Code
+```ino
+#include <IRremote.h>
+
+const int RECV_PIN = 4 ;
+int led1 = 5;
+int led2 = 6;
+int led3 = 7;
+int led4 = 8;
+int itsONled[] = {0,0,0,0,0};
+
+#define code1  48511
+#define code2  38079
+#define code3  49371
+#define code4  15355
+
+
+
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(led1,OUTPUT);
+  pinMode(led2,OUTPUT);
+  pinMode(led3,OUTPUT);
+  pinMode(led4,OUTPUT);
+
+  irrecv.enableIRIn();
+
+}
+
+void loop() {
+
+
+  if (irrecv.decode(&results)) {
+        unsigned int value = results.value;
+        switch(value) {
+           case code1:
+             if(itsONled[1] == 1) {        // if first led is on then
+                digitalWrite(led1, LOW);   // turn it off when button is pressed
+                itsONled[1] = 0;           // and set its state as off
+             } else {                      // else if first led is off
+                 digitalWrite(led1, HIGH); // turn it on when the button is pressed
+                 itsONled[1] = 1;          // and set its state as on
+             }
+              break; 
+           case code2:
+             if(itsONled[2] == 1) {
+                digitalWrite(led2, LOW);
+                itsONled[2] = 0;
+             } else {
+                 digitalWrite(led2, HIGH);
+                 itsONled[2] = 1;
+             }
+              break;
+           case code3:
+             if(itsONled[3] == 1) {
+                digitalWrite(led3, LOW);
+                itsONled[3] = 0;
+             } else {
+                 digitalWrite(led3, HIGH);
+                 itsONled[3] = 1;
+             }
+              break;    
+                case code4:
+             if(itsONled[4] == 1) {
+                digitalWrite(led4, LOW);
+                itsONled[4] = 0;
+             } else {
+                 digitalWrite(led4, HIGH);
+                 itsONled[4] = 1;
+             }
+              break;      
+        }
+        Serial.println(value); 
+        irrecv.resume(); 
+      }
+    }
+
+```
+
 
 
 ### Experiment 11 - Potentiometer analog Value Reading 
